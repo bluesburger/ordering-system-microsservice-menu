@@ -4,7 +4,7 @@ FROM amazoncorretto:17-al2-jdk
 WORKDIR /app
 
 # Copie o JAR gerado a partir da etapa anterior para o contêiner
-COPY target/mocked-menu-0.0.1-SNAPSHOT.jar .
+COPY target/menu-0.0.1-SNAPSHOT.jar .
 COPY src/main/resources/*.properties .
 
 ENV PORT 8080
@@ -12,4 +12,4 @@ ENV PORT 8080
 EXPOSE 8080
 
 # Comando para iniciar o aplicativo
-ENTRYPOINT ["java", "-jar", "mocked-menu-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "menu-0.0.1-SNAPSHOT.jar"]

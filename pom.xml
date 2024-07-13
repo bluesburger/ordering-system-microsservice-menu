@@ -59,10 +59,10 @@
 	</pluginRepositories>
 	
 	<groupId>br.com.bluesburger</groupId>
-	<artifactId>mocked-menu</artifactId>
+	<artifactId>menu</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>mocked-menu</name>
+	<name>menu</name>
 	<description>Context of menu</description>
 	
 	<properties>
@@ -124,7 +124,7 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- Flyway -->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
@@ -163,18 +163,6 @@
 		    <groupId>br.com.caelum.stella</groupId>
 		    <artifactId>caelum-stella-core</artifactId>
 		    <version>2.1.6</version>
-		</dependency>
-		
-		<!-- Consul Service Discovery -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-consul-all</artifactId>
-			<version>4.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-runtime</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		
 		<!-- Spring Boot Actuator -->
@@ -479,7 +467,7 @@
                         <artifactId>gatling-maven-plugin</artifactId>
                         <version>4.3.7</version>
                         <configuration>
-                            <simulationClass>br.com.bluesburguer.order.performance.ApiPerformanceSimulation</simulationClass>
+                            <simulationClass>br.com.bluesburger.order.performance.ApiPerformanceSimulation</simulationClass>
                         </configuration>
                     </plugin>
                 </plugins>

@@ -18,7 +18,7 @@ FROM amazoncorretto:17-al2-jdk
 WORKDIR /app
 
 # Copie o JAR gerado a partir da etapa anterior para o contêiner
-COPY --from=builder /app/target/mocked-menu-0.0.1-SNAPSHOT.jar .
+COPY --from=builder /app/target/menu-0.0.1-SNAPSHOT.jar .
 COPY --from=builder /app/target/*.properties .
 
 
@@ -26,4 +26,4 @@ COPY --from=builder /app/target/*.properties .
 EXPOSE 8080
 
 # Comando para iniciar o aplicativo
-ENTRYPOINT ["java", "-jar", "mocked-menu-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "menu-0.0.1-SNAPSHOT.jar"]
