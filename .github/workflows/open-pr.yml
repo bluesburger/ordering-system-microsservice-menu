@@ -3,7 +3,7 @@ name: open-pr-to-main
 on:
   push:
     branches:
-      - feature/**
+      - develop
 
 jobs:
   open-pr-to-main:
